@@ -1,0 +1,37 @@
+.settings{
+    display: flex;
+    justify-content: center;
+    align-items: align-items-center;
+}
+
+.add__btn{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #152540;
+    border-radius: 99px;
+    width: 288px;
+    justify-content: center;
+}
+
+.add__image{
+    display: none;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    background: #152540;
+    border-radius: 99px;
+    margin-bottom: 10px;
+}

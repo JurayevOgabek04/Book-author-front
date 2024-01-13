@@ -1,0 +1,17 @@
+.books__img{
+    margin-top: 50px;
+    width: 100%;
+    height: 340px;
+}
+
+.books__site{
+    background-color: #191919;
+    padding:0 40px;
+    padding-bottom: 20px;
+    
+}
+
+.books__search{
+    position: relative;
+    margin-bottom: 150px;
+}

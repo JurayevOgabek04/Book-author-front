@@ -1,0 +1,23 @@
+.home__img{
+    margin-top: 50px;
+    width: 100%;
+    height: 340px;
+}
+
+.home__site{
+    background-color: #191919;
+    padding:0 40px;
+    padding-bottom: 10px;
+    
+}
+
+.home__search{
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.outlet__div{
+    margin-top: 20px;
+    height: 700px;
+    overflow-y: auto;
+}

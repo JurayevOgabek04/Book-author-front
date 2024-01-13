@@ -1,0 +1,19 @@
+.nav{
+    display: flex; 
+    padding: 20px;  
+    
+}
+
+.nav__link{
+    color: white;
+    text-decoration: none;
+    margin-right: 44px;
+}
+
+.active__link{
+    color: #fff;
+    margin-right: 44px;
+    border-bottom: 2px solid #fff;
+    text-decoration: none;
+}
+

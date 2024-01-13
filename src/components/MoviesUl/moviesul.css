@@ -1,0 +1,9 @@
+.moviesList{
+    list-style: none;
+    padding-top: 30px;
+    background-color: #191919;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    
+}

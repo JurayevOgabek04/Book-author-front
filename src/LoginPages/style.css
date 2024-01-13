@@ -1,0 +1,40 @@
+.sayt__bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    background-color: rgb(56, 54, 54);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.sayt__bar__title{
+    font-family: 'Rotterburg Stylish FREE';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 144.4%;
+    color: #C9AC8C;
+}
+
+.func__sytle{
+    font-family: 'Steinbeck';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.nav__items{
+    display: flex;
+    list-style: none;
+}
+
+.nav__item + .na
+/* Style Pablic Js */
+.pablic{
+    height: 100vh;
+    
+    
+}
+

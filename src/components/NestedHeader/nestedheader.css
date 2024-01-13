@@ -1,0 +1,41 @@
+.nested__title{
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    font-family: 'Rotterburg Stylish FREE';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 34px;
+    color: #C9AC8C;
+}
+
+.navlink{
+    font-family: 'Steinbeck';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-left: 70px;
+    text-decoration: none;
+}
+
+.activeLink{
+    font-family: 'Steinbeck';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #C9AC8C;
+    margin-left: 70px;
+    text-decoration: none;
+}
+
+.nested__nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}

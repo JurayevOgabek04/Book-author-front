@@ -1,0 +1,62 @@
+.add__item{
+    list-style: none;
+}
+
+.add__link{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    
+    text-decoration: none;
+}
+
+.image__acc{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 5px;
+    object-fit: fill;
+}
+
+.navbarsayt{
+    position: relative;
+
+}
+.addnavbar{
+    background-color: #152540;
+    border-radius: 5px;
+ 
+    display: block;
+    position: absolute;
+    width: 150px;
+    right: -30px;
+    top: 60px;
+}
+
+.deletenavbar{
+    display: none;
+}
+
+.addbtn{
+    height: 30px;
+    width: 40px;
+    margin-left: 10px;
+    color: white;
+    border: none;
+    background-color: transparent;
+
+}
+
+.outlet{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: transparent;
+    padding-bottom: 10px;
+    border: none;
+}
+
