@@ -1,11 +1,12 @@
 
 import { useRef, useState } from "react";
 import { useNavigate, NavLink } from "react-router-dom"
+
 import "./login.css"
 import SingBg from "../../image/singin.svg"
 export const Login = () => {
-    // const [data, setData] = useState({})
 
+    const [data, setData] = useState([])
 
     const elEmail = useRef()
     const elPassword = useRef()
@@ -21,20 +22,23 @@ export const Login = () => {
                 password: elPassword.current.value
             })
         };
-        fetch('https://book-service-layer.herokuapp.com/user/login', requestOptions)
+        fetch('http://localhost:3000/user/login', requestOptions)
             .then(response => response.json())
             .then(data => {
                 if (data) {
-                    window.localStorage.setItem("token", data.token)
-                    navigete("/")
-
-                    window.location.reload();
-
+                    if (data.access_token) {
+                        window.localStorage.setItem("token", data.access_token
+                        )
+                        navigete("/")
+                        window.location.reload();
+                    } else {
+                        setData(data)
+                    }
                 }
             });
 
 
-
+        console.log(data);
         evt.target.reset()
     }
 
@@ -48,8 +52,8 @@ export const Login = () => {
                 <h1>Login in</h1>
                 <p>Do not you have an account? <NavLink className="login__link" to="/loginup">Sing Up</NavLink></p>
                 <form className="form" onSubmit={handalForm}>
-                    <input className="form-control mb-4" ref={elEmail} type="email" placeholder="email..." />
-                    <input className="form-control" ref={elPassword} type="password" placeholder="password..." />
+                    <input className="form-control mb-4" ref={elEmail} type="email" placeholder="email..." required />
+                    <input className="form-control" ref={elPassword} type="password" placeholder="password..." required />
                     <button className="login__btn" type="submit">Next step</button>
                 </form>
             </div>
