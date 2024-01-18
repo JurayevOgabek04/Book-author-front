@@ -1,4 +1,4 @@
-import axios from "axios"
+// import axios from "axios"
 import { useNavigate, NavLink } from "react-router-dom"
 import { useRef } from "react"
 import "./loginup.css"
@@ -14,22 +14,47 @@ export const LoginUp = () => {
 
     const handelForm = (evt) => {
         evt.preventDefault()
-        const formdata = new FormData()
+        // const formdata = new FormData()
 
-        formdata.append("first_name", elFrist.current.value);
-        formdata.append("last_name", elLast.current.value);
-        formdata.append("phone", elPhone.current.value);
-        formdata.append("email", elEmail.current.value);
-        formdata.append("password", elPassword.current.value);
+        // formdata.append("first_name", elFrist.current.value);
+        // formdata.append("last_name", elLast.current.value);
+        // formdata.append("phone", elPhone.current.value);
+        // formdata.append("email", elEmail.current.value);
+        // formdata.append("password", elPassword.current.value);
 
-        axios.post("https://book-service-layer.herokuapp.com/user/register", formdata)
+        // axios.post("http://localhost:3000/users/register", formdata)
+        //     .then(data => {
+        //         if (data) {
+        //             window.localStorage.setItem("token", data.token)
+        //             navigete("/")
+        //         }
+        //     })
+        //     .catch(err => console.log(err))
+
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                first_name: elFrist.current.value,
+                last_name: elLast.current.value,
+                phone: elPhone.current.value,
+                email: elEmail.current.value,
+                password: elPassword.current.value
+            })
+        };
+        fetch('http://localhost:3000/user/register', requestOptions)
+            .then(response => response.json())
             .then(data => {
                 if (data) {
                     window.localStorage.setItem("token", data.token)
                     navigete("/")
+                    window.location.reload();
                 }
             })
-            .catch(err => console.log(err))
+            .catch(err => console.log(err));
+
+
+        evt.target.reset()
 
     }
 
